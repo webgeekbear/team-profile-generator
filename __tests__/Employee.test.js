@@ -1,6 +1,6 @@
 const Employee = require("../lib/Employee");
 
-test('creates an employee object', ()=> {
+test('creates an employee object', () => {
     const employee = new Employee("Jake", "301", "email@email.org");
 
     // Test properties
@@ -13,4 +13,4 @@ test('creates an employee object', ()=> {
     expect(employee.getId()).toBe("301");
     expect(employee.getEmail()).toBe("email@email.org");
     expect(employee.getRole()).toBe("Employee");
-})
+});
